@@ -12,3 +12,9 @@ jobs:
         run: |
           node --version
           npm --version
+      - name:
+        run: |
+          import platform
+          print
+          (platform.processor())
+        shell: python
